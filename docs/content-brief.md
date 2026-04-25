@@ -25,7 +25,7 @@ When he's not at the keyboard, you'll find him on the Olympic weightlifting plat
 ## Tagline Options
 
 Pick one (or suggest your own):
-1. "AI Research & Development | Writer | Technologist"
+1. "AI Research & Development | Writer | Photographer | Technologist" *(selected)*
 2. "Building at the intersection of technology and human experience"
 3. "Technologist. Writer. Builder."
 4. "Exploring AI, one line at a time — code and prose"
@@ -37,6 +37,9 @@ Researching and building with artificial intelligence — from large language mo
 
 ### Writing & Journalism
 Over 250 published journalism pieces spanning technology, culture, and community. Currently building a platform for essays and articles on AI, technology, and the human side of innovation.
+
+### Photography
+Exploring the world through a visual lens — landscapes, street photography, and documentary work. A creative counterpart to the written word.
 
 ### Projects
 Hands-on development projects built with AI-assisted tools. Explore live applications and experiments.
@@ -57,6 +60,7 @@ Hands-on development projects built with AI-assisted tools. Explore live applica
 
 ## Content To Be Added Later
 
+- **Photography gallery** — Curated photo gallery and photo essays
 - **Medium/Substack articles** — Featured article cards with title, publication, excerpt, link
 - **Olympic Weightlifting subdomain** — competition results, training logs, USMW affiliation
 - **AA Home Group subdomain** — meeting info, resources

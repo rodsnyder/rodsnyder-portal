@@ -39,8 +39,8 @@ See `docs/design-spec.md` for the complete design specification. Key points:
 ### Colors
 | Role | Color | Hex |
 |------|-------|-----|
-| Primary | Deep navy blue | `#1a365d` |
-| Accent | Warm gold | `#d4a843` |
+| Primary | Royal blue | `#1e3a8a` |
+| Accent | Antique gold | `#996515` |
 | Complement | Slate gray | `#64748b` |
 | Body text | Dark charcoal | `#1e293b` |
 | Background | Off-white | `#f8fafc` |
@@ -57,22 +57,23 @@ See `docs/design-spec.md` for the complete design specification. Key points:
 - **Extensible** — easy to add new sections, pages, and subdomain links
 
 ### Sections (top to bottom)
-1. **Header/Nav** — Name + nav links (Home, Projects, Writing, Contact). Only active links — add future subdomains when ready
+1. **Header/Nav** — Name + nav links (Home, Projects, Writing, Photography, Contact). Only active links — add future subdomains when ready
 2. **Hero** — Name, tagline, brief positioning statement
 3. **About** — 2-3 short paragraphs: tech background, AI focus, writing history
-4. **Focus Areas** — Card grid: AI R&D, Writing & Journalism, Projects
+4. **Focus Areas** — Card grid: AI R&D, Writing & Journalism, Photography, Projects
 5. **Writing** — Featured articles section (placeholder for Medium/Substack links)
-6. **Footer** — Social links, email, copyright
+6. **Photography** — Photo gallery and photo essays (placeholder cards)
+7. **Footer** — Social links, email, copyright
 
 ### Social Links
 Rod has accounts on: GitHub, Medium, Substack, LinkedIn, Facebook, Instagram, Reddit
 *(Exact URLs to be provided — use placeholder hrefs until then)*
 
 ### Assets Needed (not yet provided)
-- [ ] Professional headshot/photo
+- [x] Professional headshot/photo — `assets/rod_snyder.jpg`
 - [ ] Social profile URLs (GitHub, Medium, Substack, LinkedIn, Facebook, Instagram, Reddit)
-- [ ] Bio text (or draft from context above for Rod's review)
-- [ ] Favicon (generate an "RS" monogram in blue/gold)
+- [x] Bio text — Option A (technology-forward) selected
+- [x] Favicon — script "RS" monogram in royal blue/antique gold
 
 ## Tech Stack
 

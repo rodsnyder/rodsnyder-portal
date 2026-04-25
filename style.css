@@ -1,0 +1,422 @@
+/* ============================================
+   rodsnyder.ai — Styles
+   Mobile-first responsive design
+   ============================================ */
+
+/* --- Custom Properties --- */
+:root {
+  --color-primary: #1e3a8a;
+  --color-primary-light: #2d52b0;
+  --color-accent: #996515;
+  --color-accent-dark: #7d5210;
+  --color-text: #1e293b;
+  --color-text-secondary: #64748b;
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --max-width: 1200px;
+  --max-text-width: 720px;
+}
+
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-primary-light);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* --- Container --- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* --- Header --- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-surface);
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.site-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.site-logo:hover {
+  color: var(--color-primary-light);
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  padding: 0.25rem 0;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--color-primary-light);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-accent);
+  transition: width 0.2s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* --- Hero --- */
+.hero {
+  background: var(--color-primary);
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-headshot {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--color-accent);
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.hero-tagline {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* --- Section Headings --- */
+.about h2,
+.focus-areas h2,
+.writing h2,
+.photography h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.about h2::after,
+.focus-areas h2::after,
+.writing h2::after,
+.photography h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: var(--color-accent);
+}
+
+/* --- About --- */
+.about {
+  background: var(--color-bg);
+  padding: 3rem 0;
+}
+
+.about-text {
+  max-width: var(--max-text-width);
+  margin: 0 auto;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Focus Areas --- */
+.focus-areas {
+  background: var(--color-surface);
+  padding: 3rem 0;
+}
+
+/* --- Card Grid --- */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* --- Cards --- */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-accent);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-icon {
+  flex-shrink: 0;
+  color: var(--color-accent-dark);
+}
+
+.card p {
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.card-link {
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.card-link:hover {
+  color: var(--color-primary-light);
+  text-decoration: underline;
+}
+
+.card--placeholder {
+  opacity: 0.85;
+}
+
+.card-meta {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Writing --- */
+.writing {
+  background: var(--color-bg);
+  padding: 3rem 0;
+}
+
+.section-intro {
+  max-width: var(--max-text-width);
+  margin: 0 auto 2rem;
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+/* --- Photography --- */
+.photography {
+  background: var(--color-surface);
+  padding: 3rem 0;
+}
+
+/* --- Footer --- */
+.site-footer {
+  background: var(--color-primary);
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 0;
+  border-top: 3px solid var(--color-accent);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.social-links a {
+  color: #ffffff;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: var(--color-accent);
+}
+
+.social-links svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* --- Tablet (640px+) --- */
+@media (min-width: 640px) {
+  .hero {
+    padding: 4rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.1rem;
+  }
+
+  .hero-headshot {
+    width: 165px;
+    height: 165px;
+  }
+
+  .about,
+  .focus-areas,
+  .writing,
+  .photography {
+    padding: 4rem 0;
+  }
+
+  .about h2,
+  .focus-areas h2,
+  .writing h2,
+  .photography h2 {
+    font-size: 1.75rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-list {
+    gap: 1.5rem;
+  }
+}
+
+/* --- Desktop (1024px+) --- */
+@media (min-width: 1024px) {
+  .hero {
+    padding: 5rem 0;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.25rem;
+  }
+
+  .hero-headshot {
+    width: 180px;
+    height: 180px;
+  }
+
+  .about,
+  .focus-areas,
+  .writing,
+  .photography {
+    padding: 5rem 0;
+  }
+
+  .about h2,
+  .focus-areas h2,
+  .writing h2,
+  .photography h2 {
+    font-size: 2rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

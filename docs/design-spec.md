@@ -12,10 +12,10 @@
 
 | Role | Color | Hex | Usage |
 |------|-------|-----|-------|
-| Primary | Deep navy | `#1a365d` | Headers, nav background, buttons |
-| Primary light | Medium blue | `#2d4a7c` | Hover states, secondary elements |
-| Accent | Warm gold | `#d4a843` | Borders, highlights, icons, decorative accents |
-| Accent dark | Deep gold | `#b8922e` | Hover state for gold elements |
+| Primary | Royal blue | `#1e3a8a` | Headers, nav background, buttons |
+| Primary light | Medium blue | `#2d52b0` | Hover states, secondary elements |
+| Accent | Antique gold | `#996515` | Borders, highlights, icons, decorative accents |
+| Accent dark | Deep gold | `#7d5210` | Hover state for gold elements |
 | Text primary | Dark charcoal | `#1e293b` | Body text |
 | Text secondary | Slate gray | `#64748b` | Captions, metadata, subtle text |
 | Background | Off-white | `#f8fafc` | Page background |
@@ -23,7 +23,7 @@
 | Border | Light gray | `#e2e8f0` | Card borders, dividers |
 
 ### Color Usage Rules
-- **Gold on white is unreadable** — never use gold (`#d4a843`) for text on white/light backgrounds
+- **Gold on white is unreadable** — never use gold (`#996515`) for text on white/light backgrounds
 - Gold is for: borders, decorative lines, icon fills, button accents, hover underlines
 - Blue is for: headings, nav, buttons, links
 - Body text is always dark charcoal (`#1e293b`) on light backgrounds or white on dark backgrounds
@@ -66,7 +66,7 @@
 ### 1. Header/Navigation
 - Fixed or sticky nav at top
 - Left: "Rod Snyder" (text logo, navy blue)
-- Right: Nav links — Home, Projects, Writing, Contact
+- Right: Nav links — Home, Projects, Writing, Photography, Contact
 - Mobile: hamburger menu or collapsed nav
 - Bottom border: thin gold accent line
 
@@ -89,6 +89,7 @@
 - Cards:
   - **AI Research & Development** — current focus, Claude Code, building with AI
   - **Writing & Journalism** — 257+ journalism pieces, novels, future Medium/Substack
+  - **Photography** — landscapes, street photography, documentary work, photo essays
   - **Projects** — link to guide.rodsnyder.ai and future apps
 
 ### 5. Writing Section
@@ -97,7 +98,13 @@
 - Start with 2-3 placeholder cards or "Coming soon" state
 - Design should accommodate 6-9 article cards at full capacity
 
-### 6. Footer
+### 6. Photography Section
+- Photo gallery and photo essay showcase
+- Card layout with placeholder cards initially
+- Design should accommodate a growing gallery of images and photo essays
+- Off-white/white alternating background to maintain visual rhythm
+
+### 7. Footer
 - Navy blue background
 - Social links row (SVG icons): GitHub, Medium, Substack, LinkedIn, Facebook, Instagram, Reddit
 - Contact email: rod@rodsnyder.ai (when email routing is set up)
