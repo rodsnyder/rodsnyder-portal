@@ -8,3 +8,6 @@
 
 # Environment
 .env
+.idea/
+.playwright-mcp/
+.claude/

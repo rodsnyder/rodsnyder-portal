@@ -30,7 +30,7 @@ The domain `rodsnyder.ai` uses a hub-and-spoke model managed via Cloudflare:
 - **SSL mode:** Full (not Full Strict) — set in Cloudflare SSL/TLS settings
 - **Deployment:** Cloudflare Pages — auto-deploys from GitHub on push to `main`
 - **No build step needed** — plain HTML/CSS/JS, served directly
-- Full domain architecture doc: `/Users/rodsnyder/Claude Code/docs/domain-architecture.md`
+- Full domain architecture doc: `/Users/rodsnyder/Developer/Claude Code/docs/domain-architecture.md`
 
 ## Design Spec
 
@@ -124,7 +124,7 @@ rodsnyder-portal/
 ## Relationship to Other Projects
 
 This portal project was spun out of the Claude Code Guide project:
-- **Claude Code Guide repo:** `/Users/rodsnyder/Claude Code/Dev/projects/claude-code-guide/`
+- **Claude Code Guide repo:** `/Users/rodsnyder/Developer/Claude Code/Dev/projects/claude-code-guide/`
 - **Guide site:** `guide.rodsnyder.ai` (Flask app on Railway)
-- **Master task tracker:** `/Users/rodsnyder/Claude Code/TASKS.md` (Phase 11 tracks this project)
-- **Domain architecture:** `/Users/rodsnyder/Claude Code/docs/domain-architecture.md`
+- **Master task tracker:** `/Users/rodsnyder/Developer/Claude Code/TASKS.md` (Phase 11 tracks this project)
+- **Domain architecture:** `/Users/rodsnyder/Developer/Claude Code/docs/domain-architecture.md`
