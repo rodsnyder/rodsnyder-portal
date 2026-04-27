@@ -11,3 +11,4 @@
 .idea/
 .playwright-mcp/
 .claude/
+.venv/
